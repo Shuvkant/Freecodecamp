@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">IOE Purwanchal Campus Survery Form</h1>
+        <p id="description">Purwanchal Campus, formerly known as Eastern Region (ERC) Campus is one of constituent
+            campuses
+            of Tribhuvan University (TU) and one of the associate engineering campuses of Institute of Engineering (IOE)
+            which is a comprehensive, non-profit making institution and pioneering institution of higher education level
+            in
+            Nepal funded by Government of Nepal.</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label">Name</label><input type="text" id="name" placeholder="Enter your Name" name="name"
+                class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Email</label><input type="email" id="email" name="email" placeholder="Enter your Email"
+                    class="form-control">
+        </div>
+        <div class="form-group"><label>Age(Optional)</label>
+            <input type="number" id="number" name="" min="13" max="50"
+                    class="form-control" placeholder="Age" size="50"></div>
+        <div>
+            <label>Which province do you belong?</label>
+            <select>
+                <option value="">(Select a province)</option>
+                <option value="1">Province 1</option>
+                <option value="2">Madhesh Pradesh</option>
+                <option value="3">Bagmati Pradesh</option>
+                <option value="4">Gandaki Pradesh</option>
+                <option value="5">Lumbini Pradesh</option>
+                <option value="6">Karnali Pradesh</option>
+                <option value="7">Sudurpaschim Pradesh</option>
+            </select>
+        </div>
+        <div>
+            <label>Would you recommend Purwanchal Campus to a friend?</label>
+            <label><input type="radio" name="recommend">Maybe</label>
+            <label for=""><input type="radio" name="recommend">Not Sure</label>
+            <label for=""><input type="radio" name="recommend">Definitely</label>
+        </div>
+        <div>
+            <label>What are the programs offered by IOE?</label>
+            <select>
+                <option value="0">Select a program</option>
+                <option value="1">UNDERGRADUATE(B.E)</option>
+                <option value="2">GRADUATE(M.SC)</option>
+                <option value="3">POST GRADUATE(Ph.D)</option>
+            </select>
+        </div>
+        <div>
+            <label for="">What program do you want to get enrolled in?</label>
+            <label><input type="checkbox">Architecture Engineering</label>
+            <label><input type="checkbox">Civil Engineering</label>
+            <label><input type="checkbox">Computer Engineering</label>
+            <label><input type="checkbox">Mechanical Engineering</label>
+            <label><input type="checkbox">Electrical Engineering</label>
+            <label><input type="checkbox">Electronics and Communication Engineering</label>
+            <label><input type="checkbox">Aerospace Engineering</label>
+            <label><input type="checkbox">Automobile Engineering</label>
+            <label>Any comments or suggestions?
+                <textarea placeholder="Enter your comments..."></textarea>
+            </label>
+        </div>
+        <div>
+            <button id="submit" type="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body{
+    /* background-color: burlywood; */
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+h1, p{
+    margin: 1em auto;
+    text-align: center;
+
+}
+
+form{
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    /* background-color: red; */
+    /* text-align: center; */
+}
+label{
+    display: block;
+}
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
